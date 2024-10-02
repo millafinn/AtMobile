@@ -1,0 +1,26 @@
+.button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .primary {
+    background-color: coral;
+    color: white;
+  }
+  
+  .small {
+    font-size: 12px;
+  }
+  
+  .large {
+    font-size: 18px;
+  }
+  
+  .button:hover {
+    background-color: coral;
+    transform: scale(1.05);
+    color: black;
+  }
+  

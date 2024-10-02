@@ -1,0 +1,194 @@
+/* Estilo geral da aplicação */
+.app {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s ease;
+}
+
+/* Estilos para o modo escuro */
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Estilos do cabeçalho */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: coral;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 50px;
+}
+
+/* Estilos da navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: coral;
+}
+
+/* Estilo do botão do menu hambúrguer */
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+}
+
+/* Estilos do menu */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.menu li {
+  position: relative;
+  margin: 0 15px;
+  list-style-type: none;
+}
+
+.menu li:hover {
+  color: white;
+}
+
+/* Estilo do menu no modo claro */
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Estilos do dropdown */
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: coral;
+  border-radius: 5px;
+  padding: 10px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.dropdown li {
+  padding: 8px 16px;
+}
+
+.dropdown li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+/* Exibir dropdown ao passar o mouse */
+.menu li:hover .dropdown,
+.menu li:focus-within .dropdown {
+  display: block;
+}
+
+/* Estilos do menu no modo escuro */
+.dark-mode .menu li a {
+  color: #fff;
+}
+
+.dark-mode .menu li a:hover {
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.open {
+    display: block;
+  }
+}
+
+.main {
+  padding: 20px;
+}
+
+/* Seção de vídeos */
+.video-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Tornar vídeos fluidos */
+.video-section iframe {
+  width: 100%;
+  height: auto;
+}
+
+/* Grade de produtos */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* Tornar imagens fluidas */
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Cartões de produtos */
+.product-card {
+  border: none;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilos do rodapé */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: coral;
+}
+
+@media (max-width: 600px) {
+  .video-section {
+    grid-template-columns: 1fr;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.social-media {
+  display: flex;
+  gap: 15px;
+}
+
+.social-media a {
+  color: inherit;
+  font-size: 24px;
+}
